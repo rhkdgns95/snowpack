@@ -1,0 +1,49 @@
+{
+  "presets": [
+    "@babel/preset-typescript",
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
+    ], // 👈 this is important
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "esmodules": true
+        },
+        "bugfixes": true,
+        "modules": false
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "libraryDirectory": "es",
+        "style": "css"
+      },
+      "antd"
+    ]
+    // [
+    //   "import",
+    //   {
+    //     "libraryName": "antd-mobile",
+    //     "style": "css"
+    //   },
+    //   "antd-mobile"
+    // ],
+    // [
+    //   "import",
+    //   {
+    //     "libraryName": "@ant-design/icons",
+    //     "libraryDirectory": "es/icons",
+    //     "camel2DashComponentName": false
+    //   },
+    //   "@ant-design/icons"
+    // ]
+  ]
+}
