@@ -45,7 +45,7 @@ ___
 
 
 > ⛄ Snowpack
-  - size : 2.21MB (2,327,235 바이트)
+  - size : 3.11MB (3,262,167 바이트)
   - done : 39.41s.
   ```bash
   $ snowpack build
