@@ -1,7 +1,7 @@
 module.exports = {
   plugins: [
-    "@snowpack/plugin-react-refresh",
     "@snowpack/plugin-babel", // 👈 have to add babel here
+    "@snowpack/plugin-react-refresh",
   ],
   devOptions: {
     port: 3000,
@@ -9,14 +9,11 @@ module.exports = {
   },
   install: [
     "react/jsx-runtime",
-    "antd/es/space",
-    "antd/es/space/style/css",
-    "antd/es/button",
-    "antd/es/button/style/css",
+    "antd/**/*.*"
   ],
   mount: {
     public: "/",
-    src: "/dist",
+    src: "/build",
   },
   experiments: {
     optimize: {
