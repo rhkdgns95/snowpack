@@ -1,4 +1,5 @@
-# Snowpack
+
+# Snowpack [![snowpack](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/6v76f9&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/6v76f9/runs)
 - What is Snowpack?
 - Build (Optimize / Non-Optimize)
 - Snowpack set env variables.

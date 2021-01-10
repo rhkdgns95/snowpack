@@ -20,6 +20,6 @@
     "start": "yarn snowpack dev --reload",
     "build": "yarn snowpack build",
     "test": "start-server-and-test start http://localhost:3000 cypress",
-    "cypress": "cypress run App.e2e.js"
+    "cypress": "cypress run --record --key 6c800761-3679-4bc2-8ff5-094d7cbe639e App.e2e.js "
   }
 }
