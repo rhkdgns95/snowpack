@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [12.x]  
 
     steps:
     - name: Checkout repository
@@ -38,17 +38,18 @@ jobs:
     - name: Test
       run: npm run test
 
-    - name: Cypress run
-      uses: cypress-io/github-action@v2
-      timeout-minutes: 10
-      with:
-        record: true
-        parallel: true
-        start: npm run test
-        group: Parallel 2x on ${{ matrix.os }}.
-      env:
-        # pass the Dashboard record key as an environment variable
-        CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    # - name: Cypress run
+    #   uses: cypress-io/github-action@v2
+    #   timeout-minutes: 10
+    #   with:
+    #     browser: chrome
+    #     record: true
+    #     parallel: true
+    #     start: npm run test
+    #     group: Parallel 2x on ${{ matrix.os }}.
+    #   env:
+    #     # pass the Dashboard record key as an environment variable
+    #     CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
