@@ -91,11 +91,11 @@ module.exports = {
     public: "/",
     src: "/build",
   },
-  // experiments: {
-  //   optimize: {
-  //     bundle: true,
-  //     minify: true,
-  //     target: "es2018",
-  //   },
-  // },
+  experiments: {
+    optimize: {
+      bundle: true,
+      minify: true,
+      target: "es2018",
+    },
+  },
 };
