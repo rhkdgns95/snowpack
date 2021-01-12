@@ -75,6 +75,10 @@ function getInstallModules(arr) {
   ]
 }
 module.exports = {
+  mount: {
+    public: "/",
+    src: "/build",
+  },
   plugins: [
     "@snowpack/plugin-babel", // 👈 have to add babel here
     "@snowpack/plugin-react-refresh",
@@ -87,10 +91,7 @@ module.exports = {
     "react/jsx-runtime",
     ...getInstallModules(antdModules)
   ],
-  mount: {
-    public: "/",
-    src: "/build",
-  },
+
   experiments: {
     optimize: {
       bundle: true,
